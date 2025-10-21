@@ -44,6 +44,31 @@ From: https://www.sphinx-doc.org/en/master/tutorial/index.html
  - Autopilot see branch `setup-sphinx-demo-repo`
 This repository demonstrates the basic Sphinx documentation setup following the official Sphinx tutorial.
 
+## Useful extensions:
+
+- `sphinx-autobuild`: Automatically rebuilds documentation on changes and serves it via a local web server. Run with `sphinx-autobuild docs docs/_build/html`.
+- `sphinx-rtd-theme`: A popular Sphinx theme used by Read the Docs.
+
+Some other (llm generated) useful extensions:
+
+| Extension                     | Built-in? | Description                                      | Example Usage                                      |
+| ----------------------------- | --------- | ------------------------------------------------ | -------------------------------------------------- |
+| `sphinx.ext.autodoc`          | ✅ Yes    | Automatically generates API docs from docstrings | `rst .. automodule:: mymodule   :members:`         |
+| `sphinx.ext.napoleon`         | ✅ Yes    | Supports Google & NumPy style docstrings         | `rst .. autofunction:: myfunc`                     |
+| `sphinx.ext.viewcode`         | ✅ Yes    | Adds links to highlighted source code in docs    | Just enable; adds “View Source” links              |
+| `sphinx.ext.todo`             | ✅ Yes    | Adds TODO items in docs                          | `rst .. todo:: Implement this feature`             |
+| `sphinx.ext.coverage`         | ✅ Yes    | Reports docstring coverage for modules           | `bash make coverage`                               |
+| `sphinx.ext.mathjax`          | ✅ Yes    | Renders math formulas with MathJax               | ``rst :math:`E=mc^2` ``                            |
+| `sphinx.ext.intersphinx`      | ✅ Yes    | Links to docs of other projects                  | `python inv:python:dict`                           |
+| `sphinx.ext.autosectionlabel` | ✅ Yes    | Allows referencing section titles                | ``rst :ref:`my-section-title` ``                   |
+| `sphinx.ext.duration`         | ✅ Yes    | Measures how long each step of the build takes   | Output shown during `make html`                    |
+| `sphinx.ext.autosummary`      | ✅ Yes    | Generates summary tables for modules/classes     | `rst .. autosummary:: mymodule`                    |
+| `sphinx_rtd_theme`            | ❌ No     | Read the Docs theme                              | `python html_theme = "sphinx_rtd_theme"`           |
+| `sphinx_autodoc_typehints`    | ❌ No     | Uses type hints in API docs                      | `python extensions = ["sphinx_autodoc_typehints"]` |
+| `myst_parser`                 | ❌ No     | Allows Markdown instead of reStructuredText      | `python extensions = ["myst_parser"]`              |
+| `sphinx_copybutton`           | ❌ No     | Adds “copy” button to code blocks                | No config needed; adds button automatically        |
+| `sphinx_tabs`                 | ❌ No     | Tabbed content in docs                           | `rst .. tabs:: .. tab:: First`                     |
+
 ## Copilot generated
 
 ### Project Structure

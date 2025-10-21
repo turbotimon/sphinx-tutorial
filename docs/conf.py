@@ -13,9 +13,9 @@ release = 'v0'
 # -- Path setup --------------------------------------------------------------
 
 # # Allows autodoc to find the package / avoid ModuleNotFoundError. Not needed if installed with `pip install -e .` or uv.
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('..'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
 
 
 # -- General configuration ---------------------------------------------------
