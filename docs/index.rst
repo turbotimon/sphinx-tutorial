@@ -21,9 +21,15 @@ how to :ref:`installation` the project.
 Contents
 --------
 
+.. capption: is also shown on the sidebar
+.. glob: enable wildcard patterns like chapters/* to include multiple files at once
+.. hidden: files included but not shown (you can still navigate to or :ref: them)
+
 .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
    usage
    api
 
-
+this is a normal text below the toctree
