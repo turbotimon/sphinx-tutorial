@@ -11,7 +11,11 @@ From: https://www.sphinx-doc.org/en/master/tutorial/index.html
     pkgs = import <nixpkgs> {};
     in with pkgs; mkShell {
     packages = [
-        (python3.withPackages (python-pkgs: with python-pkgs; [ sphinx ]))
+        (python3.withPackages (python-pkgs: with python-pkgs; [
+            sphinx
+            sphinx-autobuild
+            sphinx-rtd-theme
+        ]))
     ];
     }
     ```
