@@ -33,6 +33,10 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# Automatically generate summary tables (prevent having to run `sphinx-autogen` separately)
+# (prevents: checking consistency... ...docs/generated/lumache.rst: WARNING: document isn't included in any toctree [toc.not_included])
+autosummary_generate = True
+
 language = 'en'
 
 # -- Options for HTML output -------------------------------------------------
