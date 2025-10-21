@@ -35,3 +35,6 @@ From: https://www.sphinx-doc.org/en/master/tutorial/index.html
     cd docs; make html
     ```
 
+4. Next steps: https://www.sphinx-doc.org/en/master/tutorial/automatic-doc-generation.html
+
+..but autopilot version is merges. Manual see branch `manual-setup`
