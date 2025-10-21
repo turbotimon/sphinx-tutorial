@@ -73,6 +73,21 @@ Some other (llm generated) useful extensions:
 | `sphinx_copybutton`           | ❌ No     | Adds “copy” button to code blocks                | No config needed; adds button automatically        |
 | `sphinx_tabs`                 | ❌ No     | Tabbed content in docs                           | `rst .. tabs:: .. tab:: First`                     |
 
+
+Extras from Darts:
+
+| Extension                      | Built-in? | Description                                                    | Example Usage                            |
+| ------------------------------ | --------- | -------------------------------------------------------------- | ---------------------------------------- |
+| `sphinx.ext.graphviz`          | ✅ Yes    | Embeds Graphviz diagrams in the documentation                  | `rst .. graphviz:: digraph G { A -> B }` |
+| `sphinx.ext.githubpages`       | ✅ Yes    | Adds `.nojekyll` file for GitHub Pages support                 | Enable in `conf.py`; no config needed    |
+| `sphinx_automodapi.automodapi` | ❌ No     | API docs with summaries for modules, classes, and functions    | `rst .. automodapi:: mymodule`           |
+| `nbsphinx`                     | ❌ No     | Renders Jupyter notebooks (`.ipynb`) as Sphinx pages           | `rst .. nbsphinx:: notebook.ipynb`       |
+| `m2r2` *                       | ❌ No     | Converts Markdown (`.md`) files to reStructuredText for Sphinx | `rst .. include:: README.md`             |
+| `numpydoc`                     | ❌ No     | Supports NumPy-style docstrings for automatic API docs         | `python extensions = ["numpydoc"]`       |
+
+\* use myst_pareser instead of m2r2 for better Markdown support
+
+
 ## Copilot generated
 
 ### Project Structure
