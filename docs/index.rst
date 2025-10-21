@@ -10,8 +10,16 @@ Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
 
+**Lumache** (/lu'make/) is a Python library for cooks and food lovers that
+creates recipes mixing random ingredients.  It pulls data from the `Open Food
+Facts database <https://world.openfoodfacts.org/>`_ and offers a *simple* and
+*intuitive* API.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+.. note::
+
+   This is a test documentation for Sphinx tutorial.
 

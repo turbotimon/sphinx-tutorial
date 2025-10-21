@@ -24,5 +24,14 @@ From: https://www.sphinx-doc.org/en/master/tutorial/index.html
     ```sh
     sphinx-quickstart docs
     ```
+    
+3. Build HTML documentation
 
+    ```sh
+    sphinx-build -b html docs docs/_build/html
+    ```
+
+    ```sh
+    cd docs; make html
+    ```
 
